@@ -1,6 +1,6 @@
 # youtube-downloader-pytube-tkinter
 
-total python newbie here. <br>
+python newbie here. <br>
 in order to learn faster, I set up to work on small & specific projects <br>
 here's a basic youtube downloader <br>
 built in Python, using Pytube and the Tkinter module for the interface <br>
