@@ -1,15 +1,17 @@
+# UPDATE 11/2024: Youtube'a API changed and PYTUBE isn't updated anymore 
+
 import tkinter as tk
 from tkinter import messagebox
 from pytube.exceptions import PytubeError
 
-# creates the window using Tk() fucntion
+# creates the window 
 window = tk.Tk()
 
 # creates title for the window
 window.title('YouTube Video Downloader - by Youssef')
 window.iconbitmap('C:\\Users\\Dell\\Documents\\icons\\yt icon.ico')
 
-# # dimensions and position of the window
+# dimensions and position of the window
 window.geometry('550x140')
 # makes the window resizable
 window.resizable(height=True, width=True)
@@ -38,8 +40,8 @@ def dwld(chosenpath):
     try:
         from pytube import YouTube
         vid = YouTube(link_field.get())
-        str = vid.streams.filter(resolution='480p').first()
-        str.download(output_path=chosenpath)
+        strd = vid.streams.filter(resolution='480p').first()
+        strd.download(output_path=chosenpath)
         title = vid.title
         link_field.delete(0,tk.END)
         link_field.insert(0,'(download another----youtube.com/---- video)')
@@ -63,5 +65,5 @@ def closeit(event=None):
     window.destroy()
 window.bind("<Control-w>",closeit)
 
-# # runs the window infinitely
+# runs the window infinitely
 window.mainloop()
