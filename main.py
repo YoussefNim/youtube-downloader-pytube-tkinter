@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # UPDATE 11/2024: Youtube'a API changed and PYTUBE isn't updated anymore 
 
 import tkinter as tk
@@ -67,3 +68,5 @@ window.bind("<Control-w>",closeit)
 
 # runs the window infinitely
 window.mainloop()
+=======
+>>>>>>> 489becb372de6459b54a2549f5a465dddbbf4f1d
